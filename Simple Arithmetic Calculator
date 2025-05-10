@@ -1,0 +1,22 @@
+# Simple Arithmetic Calculator
+
+# Taking user inputs
+first_val = int(input("Enter your first number: "))
+second_val = int(input("Enter your second number: "))
+arithmetic_sym = input("Enter an arithmetic symbol (+, -, /, *, %): ")
+
+# Performing the operation
+if arithmetic_sym == '+':
+    result = first_val + second_val
+elif arithmetic_sym == '-':
+    result = first_val - second_val
+elif arithmetic_sym == '/':
+    result = first_val / second_val
+elif arithmetic_sym == '*':
+    result = first_val * second_val
+elif arithmetic_sym == '%':
+    result = first_val % second_val
+else:
+    result = "Invalid operator!"
+
+print("Result:", int(result))
