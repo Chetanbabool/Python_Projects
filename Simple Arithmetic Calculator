@@ -1,22 +1,47 @@
 # Simple Arithmetic Calculator
 
-# Taking user inputs
-first_val = int(input("Enter your first number: "))
-second_val = int(input("Enter your second number: "))
-arithmetic_sym = input("Enter an arithmetic symbol (+, -, /, *, %): ")
+while True:
+    # Taking user inputs
+    first_input = input("Enter your first number (or type 'exit' to quit): ")
+    if first_input.lower() == 'exit':
+        print("Exiting calculator. Goodbye!")
+        break
 
-# Performing the operation
-if arithmetic_sym == '+':
-    result = first_val + second_val
-elif arithmetic_sym == '-':
-    result = first_val - second_val
-elif arithmetic_sym == '/':
-    result = first_val / second_val
-elif arithmetic_sym == '*':
-    result = first_val * second_val
-elif arithmetic_sym == '%':
-    result = first_val % second_val
-else:
-    result = "Invalid operator!"
+    second_input = input("Enter your second number: ")
+    if second_input.lower() == 'exit':
+        print("Exiting calculator. Goodbye!")
+        break
 
-print("Result:", int(result))
+    # Convert inputs to integers
+    try:
+        first_val = int(first_input)
+        second_val = int(second_input)
+    except ValueError:
+        print("Please enter valid numbers!")
+        continue
+
+    # Get arithmetic symbol
+    arithmetic_sym = input("Enter an arithmetic symbol (+, -, /, *, %): ")
+    if arithmetic_sym.lower() == 'exit':
+        print("Exiting calculator. Goodbye!")
+        break
+
+    # Perform operation
+    if arithmetic_sym == '+':
+        result = first_val + second_val
+    elif arithmetic_sym == '-':
+        result = first_val - second_val
+    elif arithmetic_sym == '/':
+        if second_val == 0:
+            result = "Cannot divide by zero!"
+        else:
+            result = first_val / second_val
+    elif arithmetic_sym == '*':
+        result = first_val * second_val
+    elif arithmetic_sym == '%':
+        result = first_val % second_val
+    else:
+        result = "Invalid operator!"
+
+    print("Result:", result)
+    print("-" * 30)
