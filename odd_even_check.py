@@ -1,0 +1,11 @@
+while True:
+    try:
+        user_input = int(input("Enter any number to check if it is Odd or Even: "))
+        
+        if user_input % 2 == 0:
+            print("✅ Entered number is Even.\n")
+        else:
+            print("🔹 Entered number is Odd.\n")
+
+    except ValueError:
+        print("❌ Invalid input. Please enter a valid integer.\n")
