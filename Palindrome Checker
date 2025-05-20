@@ -1,0 +1,16 @@
+# Check if a string is a palindrome
+
+while True:
+    user_input = input('Enter a word to check if it is a palindrome (or type "exit" to quit): ').strip()
+    
+    if user_input.lower() == "exit":
+        print("Goodbye!")
+        break
+    
+    # Optional: Make the check case-insensitive
+    cleaned_input = user_input.lower()
+    
+    if cleaned_input == cleaned_input[::-1]:
+        print(f'"{user_input}" is a palindrome.\n')
+    else:
+        print(f'"{user_input}" is not a palindrome.\n')
