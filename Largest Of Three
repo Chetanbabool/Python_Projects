@@ -1,0 +1,17 @@
+# 4. **Find the largest of three numbers.**
+
+while True:
+    user_input = input('Enter 3 digit number to check which number is largest: ')
+
+    if len(user_input) != 3 or not user_input.isdigit():
+        print("Please enter exactly 3 digits.")
+        continue
+    
+    a,b,c = new_list = [int(digit) for digit in user_input]
+
+    if a>b and a>c:
+        print(f'{a} is greater than others.')
+    elif b>c and b>a:
+        print(f'{b} is greater than others.')
+    else:
+        print(f'{c} is greater than others.')
