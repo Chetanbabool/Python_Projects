@@ -1,0 +1,20 @@
+# Find the type of triangle:
+
+while True:
+    first_angle = int(input('Enter first angle of triangle: '))
+    second_angle = int(input('Enter second angle of triangle: '))
+    third_angle = int(input('Enter third angle of triangle: '))
+        
+    if first_angle + second_angle + third_angle == 180:
+        if first_angle==second_angle==third_angle:
+            print ('It is Equilateral Triangle')
+        elif (first_angle!=second_angle) and (second_angle!=third_angle):
+            print ('It is Scalene Triangle')
+        else:
+            print ('It is Isosceles Triangle')
+    else:
+        print('The sum of all angles is not 180 degrees. Please enter valid angles of a triangle.')
+
+    choice = input("Do you want to check another triangle? (y/n): ")
+    if choice.lower() != 'y':
+        break
