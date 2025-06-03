@@ -1,0 +1,474 @@
+# --------------------------------
+#          Beginner Level
+# ---------------------------------
+
+
+# Swap two numbers without using a temporary variable.
+
+a = 10
+b = 20
+temp = a
+a = b
+b = temp
+print(f"a = {a} and b = {b}")
+
+a = a+b
+b = a-b
+a = a-b
+print(f"a = {a} and b = {b}")
+
+
+# Check if a number is even or odd.
+
+user_input  = int(input('Enter number to check is it Odd or Even number: '))
+if user_input%2==0:
+    print('It is Even number.')
+else:
+    print('It is Odd number')
+
+
+# Find the largest among three numbers.
+
+first_number = 25
+second_number = 65
+third_number = 35
+new_list = [first_number,second_number,third_number]
+print(max(new_list))
+
+empty_list = []
+for i in range(3):
+    user_input = int(input('Enter any number: '))
+    empty_list.append(user_input)
+print(max(empty_list))
+
+first_number = int(input('Enter first number: '))
+second_number = int(input('Enter second number: '))
+third_number = int(input('Enter third number: '))
+if first_number>second_number and first_number>third_number:
+    print(first_number)
+elif second_number>first_number and second_number>third_number:
+    print(second_number)
+else:
+    print(third_number)
+
+
+# Convert kilometers to miles
+
+kilometer = int(input('Enter kilometer to convert into miles: '))
+print(kilometer*0.621)
+
+
+# Calculate the area of a circle.
+
+radius_of_circle = int(input('Enter radius of circle to find area of circle: '))
+final_result = 3.14159*radius_of_circle**2
+print(final_result)
+
+
+# Check if a number is positive, negative, or zero.
+
+user_input = int(input('Enter number to check is positive, negative, or zero: '))
+if user_input>0:
+    print('The number is postive number.')
+elif user_input<0:
+    print('The number is negative number.')
+else:
+    print('The number is zero')
+
+
+# Find the factorial of a number using a loop.
+
+empty_var = 1
+user_input = int(input('Enter number to find factorail: '))
+for i in range(1,user_input+1):
+    empty_var = empty_var*i
+print(empty_var)
+
+empty_var = 1
+user_input = int(input('Enter number to find factorail: '))
+for i in range(0,user_input):
+    empty_var = empty_var*(user_input-i)
+print(empty_var)
+
+
+#  Generate the Fibonacci sequence up to n terms.
+
+user_input = int(input('Enter number to find factorail: '))
+a, b = 0, 1
+for _ in range(user_input):
+    print(a, end=' ')
+    a, b = b, a + b
+
+
+# Count the number of vowels in a string.
+
+paragraph = "Python is a versatile and widely-used programming language. It is known for its simplicity and readability, making it an excellent choice for beginners and experts alike. Many developers use Python for web development, data analysis, artificial intelligence, and scientific computing. The language’s vast collection of libraries and frameworks allows for rapid development and prototyping of complex applications. Whether you are working on small scripts or large-scale projects, Python provides the tools needed to create efficient and maintainable code."
+
+count = 0
+for i in paragraph:
+    if i in "aeiou":
+        count = count + 1
+    else:
+        pass
+print(count)
+
+
+#  Reverse a string.
+
+demo_string = 'Hello World'
+print(demo_string[::-1])
+
+
+# Count the number of occurrences of an element in a list.
+
+fruits = [
+    "apple", "banana", "orange", "mango", "grape", "pineapple", "kiwi","strawberry", "blueberry", "watermelon", "pear", "peach", "cherry","plum", "apricot", "fig", "pomegranate", "papaya", "coconut", "lime","lemon", "grapefruit", "melon", "blackberry", "raspberry", "date",
+    "dragonfruit", "guava", "jackfruit", "lychee","apple", "banana", "mango","apple", "strawberry", "pear","mango", "blueberry", "kiwi"
+]
+
+set_new = set(fruits)
+for i in set_new:
+    if i in fruits:
+        value = fruits.count(i)
+        print(f"{i}'=' {value}")
+print(len(fruits))
+
+#  Remove duplicates from a list
+
+fruits = ["apple", "banana", "orange", "mango", "grape", "pineapple", "kiwi","strawberry", "blueberry", "watermelon", "pear", "peach", "cherry","plum", "apricot", "fig", "pomegranate", "papaya", "coconut", "lime","lemon", "grapefruit", "melon", "blackberry", "raspberry", "date",    "dragonfruit", "guava", "jackfruit", "lychee","apple", "banana", "mango","apple", "strawberry", "pear","mango", "blueberry", "kiwi"]
+
+set_new = set(fruits)
+set_new = list(set_new)
+print(len(set_new))
+
+
+# Sort a list of numbers.
+
+list_1 = [
+    87, 342, 615, 203, 478, 59, 921, 137, 804, 390,
+    16, 753, 222, 681, 94, 305, 871, 643, 288, 727,
+    119, 502, 33, 960, 471, 666, 142, 214, 386, 570,
+    628, 11, 844, 93, 712, 251, 63, 798, 449, 187,
+    331, 250, 700, 555, 128, 308, 460, 915, 37, 199
+]
+
+numbers.sort(reverse=False)
+print(numbers)
+
+
+# Merge two lists and sort the result.
+
+list_2 = [
+    7, 834, 121, 498, 213, 602, 45, 918, 376, 82,
+    690, 157, 325, 741, 263, 809, 504, 38, 470, 691,
+    104, 339, 297, 660, 886, 218, 553, 401, 170, 965,
+    33, 731, 252, 192, 144, 809, 17, 526, 684, 873,
+    295, 921, 110, 333, 420, 74, 819, 660, 209, 608
+]
+
+final_result = (list_1 + list_2)
+final_result.sort(reverse=False)
+print(final_result)
+
+# Check if a string is a palindrome.
+
+user_input = input('Enter any number/string to check is it palindrome or not: ')
+if user_input==user_input[::-1]:
+    print('It is palindrome')
+else:
+    print('It is not palindrome')
+
+
+#  Find the second largest number in a list.
+
+numbers = [    17, 843, 295, 62, 710, 432, 101, 999, 58, 374,221, 807, 13, 689, 305, 76, 540, 311, 426, 888,79, 120, 244, 911, 354, 63, 798, 5, 286, 690]
+
+numbers.sort(reverse=True)
+print(numbers[1])
+
+
+# Join list elements into a single string.
+
+sentences = [
+    "The sky is blue.","Apples grow on trees.","I love learning Python.","Birds fly high in the sky.","She reads a book every night.","The dog barked loudly.","They walked to the market.",
+    "It rained all day.","He opened the door slowly.","Music makes people happy."
+]
+
+empty_list = ""
+for i in sentences:
+    empty_list = empty_list + i
+print(empty_list)
+
+print(" ".join(sentences))
+
+
+# Find the sum of all elements in a list
+
+numbers = [    17, 843, 295, 62, 710, 432, 101, 999, 58, 374,221, 807, 13, 689, 305, 76, 540, 311, 426, 888,79, 120, 244, 911, 354, 63, 798, 5, 286, 690]
+
+print(sum(numbers))
+
+
+# Slice a list into chunks of size n
+
+numbers = [17, 843, 295, 62, 710, 432, 101, 999, 58, 374,221, 807, 13, 689, 305, 76, 540, 311, 426, 888,79, 120, 244, 911, 354, 63, 798, 5, 286, 690]
+
+chunks = []
+for i in range(0,len(numbers),5):
+    chunk = numbers[i:i + 5]
+    # chunks.append(chunk)
+
+print(chunk)
+
+
+# --------------------------------
+#          Intermediate Level
+# ---------------------------------
+
+
+#  Write a function to check if a number is prime.
+
+user_input = int(input('Enter any number to check is it prime number or not: '))
+if user_input<= 1:
+    print(f'{user_input} id not prime number.')
+else:
+    its_prime = True
+    for i in range(2,int(user_input**0.5)+1):
+        if user_input%i == 0:
+            its_prime = False
+            break
+    if its_prime:
+        print(f"{user_input} is a prime number")
+    else:
+        print(f"{user_input} is not a prime number")
+
+
+# Find x number in the tuple by using while loop
+
+num = 8
+i = 0
+new_tuple = (1,56,78,41,33,65,96,145,22,33,67,89,42,0,16,4,8,3,22,44,8,99)
+while i<len(new_tuple):
+        if new_tuple[i]==num:
+                print(f"Found number: {new_tuple[i]} at idx {i}")
+        else:
+                print('Finding')
+        i += 1
+
+
+# sum of first n natural number
+
+i = 0
+num = 0
+while i<=10:
+    num += i
+    i += 1
+print(num)
+
+# Create a calculator using functions (add, subtract, etc.)
+
+def custom_cal(a,b,user_arit):
+        if user_arit == '+':
+                return a + b
+        elif user_arit == '-':
+                return a - b
+        elif user_arit == '%':
+                return a % b
+        elif user_arit == '*':
+                return a * b
+first_number = int(input('Enter first number: '))
+second_number = int(input('Enter second number: '))
+arthmetic_symbol = input('Enter arithmetic symbol number: ')
+new = custom_cal(first_number,second_number,arthmetic_symbol)
+print(new)
+
+
+# Print the lenght of the list
+
+def len_of_list(new_list):
+    return len(new_list)
+
+result = len_of_list([4,5,6,2,1,5,6,2,1,5,6,516,61,65,46,465,1651,6])
+print(result)
+
+
+# print all elements of list in single 
+
+def len_of_list(new_list):
+    for i in new_list:
+        print(i,end=" ")
+
+len_of_list([4,5,6,2,1,5,6,2,1,5,6,516,61,65,46,465,1651,6])
+
+
+# Write a recursive function to calculate n natural number
+
+def sum_of_natural_num(n):
+    if n == 0:
+        return 0
+    return sum_of_natural_num(n-1)+n
+final = sum_of_natural_num(10)
+print(final)
+
+
+# write a recursive function to print all element of the list ]
+
+def ele_list(list,idx):
+    if idx == len(list):
+        return
+    print(list[idx])
+    ele_list(list,idx+1)
+ele_list([4,5,456,52,39,42],0)
+
+
+# Write a recursive function to find the factorial.
+
+def factorial_finder(n):
+    if n==1:
+        return 1
+    return factorial_finder(n-1)*n
+new = factorial_finder(5)
+print(new)
+
+
+# Create a function to return the nth Fibonacci number
+
+def fibonacci_number(n):
+        a,b= 0,1
+        for i in range(n):
+                print(a,end=" ")
+                a,b = b,a+b
+fibonacci_number(10)
+
+
+# Write a function that accepts variable arguments and returns their sum.
+
+def cal_sum(a,b):
+    return a+b 
+
+new = cal_sum(978,852)
+print(new)
+
+
+# Read a file and count the number of words.
+
+with open('sample.txt','r+') as f:
+        data_new = f.read()
+print(len(data_new))
+
+
+#  Read a CSV file and print its contents.
+import csv
+with open('practice.csv','r') as f:
+    data_of_csv = csv.reader(f)
+    for i in data_of_csv:
+        print(i)
+
+
+# Append a new line to an existing file.
+
+with open('D:\Home_work_practice\sample.txt', 'a+') as f:
+    data_file = f.write('\nMy self Chetan Babool')  # Write at end
+    f.seek(0)  # Move to start
+    data_after = f.read()  # Now read everything including the new line
+print(data_after)
+
+
+# Create a function that copies the contents of one file to another
+
+import csv
+def copy_content_fx(csv_path,new_copy_txt):
+        with open(csv_path,'r') as f:
+                data_of_csv = csv.reader(f)
+                with open(new_copy_txt, 'w', newline='') as txt_file:
+                        for row in data_of_csv:
+                                line = ', '.join(row)  # Convert list to a string with commas
+                                txt_file.write(line + '\n')  # Write each row on a new line
+copy_content_fx('prectice.csv','copy_content.txt')
+
+# Create a class, Person with attributes name and age
+
+class Person_name_age:
+        def __init__(self,p_name,p_age):
+                self.person_name = p_name
+                self.person_age = p_age
+
+p1 = Person_name_age('Chetan Babool','35')
+print(p1.person_name,p1.person_age)
+
+
+# Create a class that simulates a Bank Account.class BankInfo:
+class BankInfo:
+    def __init__(self, bank_name, acc_holder_name):
+        self.bank_name = bank_name
+        self.holder_name = acc_holder_name
+        self.acc_bal = 0
+
+    def basic_info(self):
+        print(f'\nBank Name: {self.bank_name}')
+        print(f'Account Holder: {self.holder_name}')
+
+    def withdraw(self, amount):
+        if amount > self.acc_bal:
+            print("❌ Insufficient balance to process this transaction.")
+        else:
+            self.acc_bal -= amount
+            print(f"✅ Withdrawal successful. New balance: ₹{self.acc_bal}")
+
+    def deposit(self, amount):
+        self.acc_bal += amount
+        print(f"✅ Deposit successful. New balance: ₹{self.acc_bal}")
+
+    def check_balance(self):
+        print(f"💰 Current Balance: ₹{self.acc_bal}")
+
+# --- Main Program Loop ---
+
+bank_detail = BankInfo('Punjab & Sind Bank', 'Chetan Babool')
+bank_detail.basic_info()
+
+while True:
+    print("\nChoose an option:")
+    print("1. Withdr" \
+    "aw")
+    print("2. Deposit")
+    print("3. Check Balance")
+    print("4. Exit")
+    
+    choice = input("Enter your choice (1/2/3/4): ").strip()
+
+    if choice == '1':
+        try:
+            amount = int(input("Enter the amount to withdraw: "))
+            bank_detail.withdraw(amount)
+        except ValueError:
+            print("⚠️ Please enter a valid number.")
+    
+    elif choice == '2':
+        try:
+            amount = int(input("Enter the amount to deposit: "))
+            bank_detail.deposit(amount)
+        except ValueError:
+            print("⚠️ Please enter a valid number.")
+    
+    elif choice == '3':
+        bank_detail.check_balance()
+
+    elif choice == '4':
+        print("👋 Thank you for using the banking system.")
+        break
+    else:
+        print("⚠️ Invalid choice. Please select from 1 to 4.")
+
+
+class Student:
+    def __init__(self,s_name,s_marks):
+        self.s_name = s_name
+        self.marks = s_marks
+    def avg(self):
+            average =  sum(self.marks)/3
+            return self.s_name,average
+
+student_info = Student('Chetan',[99,98,97])
+print(student_info.avg())
+
