@@ -1,0 +1,36 @@
+# Swap two numbers without using a temporary variable.
+# Check if a number is even or odd.
+# Find the largest among three numbers.
+# Convert kilometers to miles
+# Calculate the area of a circle.
+# Check if a number is positive, negative, or zero.
+# Count the number of vowels in a string.
+# Generate the Fibonacci sequence up to n terms.
+#  Reverse a string.
+# Count the number of occurrences of an element in a list.
+#  Remove duplicates from a list
+# Sort a list of numbers.
+# Merge two lists and sort the result.
+# Check if a string is a palindrome.
+#  Find the second largest number in a list.
+# Join list elements into a single string.
+# Find the sum of all elements in a list
+# Slice a list into chunks of size n
+#  Write a function to check if a number is prime.
+# Find x number in the tuple by using while loop
+# sum of first n natural number
+# Create a calculator using functions (add, subtract, etc.)
+# Print the lenght of the list
+# print all elements of list in single 
+# Write a recursive function to calculate n natural number
+# write a recursive function to print all element of the list ]
+# Write a recursive function to find the factorial.
+# Create a function to return the nth Fibonacci number
+# Write a function that accepts variable arguments and returns their sum.
+# Read a file and count the number of words.
+#  Read a CSV file and print its contents.
+# Append a new line to an existing file.
+# Create a function that copies the contents of one file to another
+# Create a class, Person with attributes name and age
+# Create a class that simulates a Bank Account.class BankInfo:
+
