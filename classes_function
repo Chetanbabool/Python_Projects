@@ -1,0 +1,81 @@
+x = 55 #---->global
+# print(x) #----->55
+
+# def glb():
+#     print(x)
+
+# glb() #---->
+# def sab():
+#     x = 95   #-----> Local Scope
+#   
+#   print(x)
+
+# sab() #------> nothing(B,R), 
+# print(x) #---->
+
+
+# global scope
+# local scope
+
+# x = 94
+# print(x)  #------>94
+# def sample():
+#     x=7
+#     return x
+
+# x = sample()
+# print(x)
+
+# def asdfg():
+#     x =515614
+#     def ssfdgfhgj():
+#         nonlocal x
+
+
+
+# def myfunc1():
+#   x = "Radhika"
+#   def myfunc2():
+#     nonlocal x
+#     x = "hello"
+#   myfunc2()
+#   return x
+
+# print(myfunc1())
+
+# x=97
+# print(x)
+# def sample():
+   
+#     x=300
+#     print(x)
+
+# print(x) #---->
+# sample() #---->
+
+
+# CLASSES ---oops
+
+# class cal():  #+,-,*,%,/,//,**
+#     """
+#     yeh function ki helpse app calculations kar sakte hai
+#     """
+
+#     def __init__(self,a,b):
+#         self.var_1 = a
+#         self.var_2 = b
+
+#     def add(self):
+
+#         return self.var_1 + self.var_2
+
+#     def mul(self):
+#         return self.var_1 * self.var_2
+
+
+
+# a = cal(5,9)
+# print(a.add())
+# print(a.mul())
+
+
